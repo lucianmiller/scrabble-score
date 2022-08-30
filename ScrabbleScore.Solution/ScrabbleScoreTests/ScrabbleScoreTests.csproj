@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ScrabbleScore\ScrabbleScoreTests.csproj" />  
+    <ProjectReference Include="..\ScrabbleScore\ScrabbleScore.csproj" />  
   </ItemGroup>
 
 </Project>
