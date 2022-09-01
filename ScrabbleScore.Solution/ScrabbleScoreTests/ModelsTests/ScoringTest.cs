@@ -5,5 +5,14 @@ using ScrabbleScore.Models;
 
 namespace ScrabbleScore.Tests
 {
-  
+  [TestClass]
+  public class ScoringTests
+  {
+    [TestMethod]
+    public void ScoringConstructor_CreateInstanceOfScoring_Scoring()
+    {
+      Scoring newScore = new Scoring("word");
+      Assert.AreEqual(typeof(Scoring), newScore.getType());
+    }
+  }
 }
