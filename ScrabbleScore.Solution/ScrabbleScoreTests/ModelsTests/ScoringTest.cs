@@ -12,7 +12,7 @@ namespace ScrabbleScore.Tests
     public void ScoringConstructor_CreateInstanceOfScoring_Scoring()
     {
       Scoring newScore = new Scoring("word");
-      Assert.AreEqual(typeof(Scoring), newScore.getType());
+      Assert.AreEqual(typeof(Scoring), newScore.GetType());
     }
   }
 }
