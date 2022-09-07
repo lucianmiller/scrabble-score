@@ -24,5 +24,15 @@ namespace ScrabbleScore.Models
       ScoreTen = new string[] { "q", "z" };
       PlayerWord = playerWord;
     }
+
+    public class Program
+    {
+      public static void Main()
+      {
+        Console.WriteLine("Welcome to Scrabble Score!");
+        Console.WriteLine("Please enter your word:");
+        string userWord = Console.ReadLine();
+      }
+    }
   }
 }
