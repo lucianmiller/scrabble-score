@@ -25,6 +25,21 @@ namespace ScrabbleScore.Models
       PlayerWord = playerWord;
     }
 
+    //Solution from https://stackoverflow.com/questions/421616/how-can-i-strip-punctuation-from-a-string
+    public string SanitizeInputWord(userWord)
+    {
+      var sb = new StringBuilder();
+
+      foreach (char c in userWord)
+      {
+        if (!char.IsPunctuation(c))
+        sb.Append(c);
+      }
+
+      userWord = sb.ToString();
+      return userWord;
+    }
+
     public class Program
     {
       public static void Main()
@@ -32,6 +47,7 @@ namespace ScrabbleScore.Models
         Console.WriteLine("Welcome to Scrabble Score!");
         Console.WriteLine("Please enter your word:");
         string userWord = Console.ReadLine();
+        string cleanUserWord = SanitizeInputWord(userWord);
       }
     }
   }
